@@ -8,7 +8,6 @@ import br.devmedia.entidade.Pessoa;
 
 public class FixtureLoader implements TemplateLoader {
 
-	@Override
 	public void load() {
 		Fixture.of(Pessoa.class).addTemplate("pessoaValida", new Rule() {{
 			add("nome", random("Jairo Sousa", "Silvana", "Caio", "Jairo Filho"));
@@ -24,6 +23,7 @@ public class FixtureLoader implements TemplateLoader {
 		}});
 		
 	}
+
 
 	
 }
